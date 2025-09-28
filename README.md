@@ -133,3 +133,4 @@ This is useful if you want multiple variable for one choice.
 
 The resulting object will be always blue and shiny if it's round, and always green and mat if its's squared.
 <br>
+This is very helpful with long and complicated prompt or workflows using different checkpoints, each of them needing different prompts.
