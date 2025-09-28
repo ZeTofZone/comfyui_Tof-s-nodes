@@ -78,19 +78,19 @@ A node which can choose randomly something.
 
 <br>&nbsp;<br>
 When you put something on input, it will add a new empty input automatically :
-<br>(Take care to not mix different inputs type)
+<br>(Take care to not mix different input types)
 <br>&nbsp;<br>
 ![random_any2](https://github.com/user-attachments/assets/1dfaced8-b0b0-4810-9122-519d69a40566)
 <br>&nbsp;<br>
 <ul>
-  <li>The <i>index</i> output is the choosen index (INT) element (start at 0 for "any_1").</li>
+  <li>The <i>index</i> output is the choosen index element (INT, start at 0 for "any_1").</li>
   <li>The <i>seed</i> output act as a relay to chain multiple nodes taking the same index (if the seed is the same, the choosen input will be the same. As this, you can switch multiple elements, it will always choose the same input between the connected nodes).</li>
   <li>The <i>seed_INT+n</i> output is to chain some other random node. Adding an INT (n) to the seed, will make it following the seed of this node (useful for reproducing workflows).</li>
 </ul>
 
 <hr>
 <h1 id="Prompt_with_variables"><b>Prompt with variables</b></h1>
-A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer), which give the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, have different prompt with the same variables).
+A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer), which give the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, having different prompts with the same variables).
 <br>&nbsp;<br>
 
 ![prompt_with_var_1](https://github.com/user-attachments/assets/a98e811b-4175-4121-8ce4-d90aaad4ad6a)
