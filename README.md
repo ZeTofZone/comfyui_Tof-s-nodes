@@ -32,7 +32,7 @@ All saving with the filename used by the WAS-nodes-suite "Image Save" node.
 
 ### ==[Random Any](#Random_Any)==
 
-- A node which can choose randomly something, with any number of inputs.
+- A node which can choose randomly any type of input, with any number of inputs.
 
 <br>
 
@@ -76,7 +76,7 @@ They are saving :
 
 <hr>
 <h1 id="Random_Any"><b>Random Any</b></h1>
-A node which can choose randomly something.
+A node which can choose randomly any type of input, with any number of inputs.
 <br>&nbsp;<br>
 
 ![random_any](https://github.com/user-attachments/assets/8e916620-f792-4ba4-8b06-c939277bfac2)
@@ -95,7 +95,7 @@ When you put something on input, it will add a new empty input automatically :
 
 <hr>
 <h1 id="Prompt_with_variables"><b>Prompt with variables</b></h1>
-A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer, can also works alone - see Note3), which gives the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, having different prompts with the same variables).
+A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer, can also works alone - see Note3), which gives the possibility to use the same variable multiple times.<br>You can use multiple of this node for, on the same workflow, have different prompts with the same variables.<br>You can also define multiple values for the same variable - see Note2..
 <br>&nbsp;<br>
 
 ![prompt_with_var_1](https://github.com/user-attachments/assets/79dc1d88-05f9-4aa5-a685-450a755861ff)
