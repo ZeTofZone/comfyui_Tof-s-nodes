@@ -129,7 +129,7 @@ is the same as :
 > 1 : {a cat|a dog}<br>
 > 2 : {brown|black}<br>
 
-This is useful if you want multiple variables for one choice, crossing the both methods together.
+This is useful if you want multiple variables for one choice, crossing both methods together.
 <br>&nbsp;<br>Example : <br>&nbsp;<br>
 <table><tr><td>variables</td><td>prompt</td><td>possible results</td></td></td></tr>
 <tr><td>1 : {smiling;a happy|crying;an unhappy}</td><td>A man #1 with #2 face.</td><td>A man smiling with a happy face.<br>or<br>A man crying with an unhappy face.</td></tr>
