@@ -1,7 +1,7 @@
 # comfyui Tof's nodes
 ## A set of utility nodes for Comfyui
 
-### [Grow Mask HV](#grow_mask)
+### ==[Grow Mask HV](#grow_mask)==
 
 <br>
 
@@ -9,7 +9,7 @@
 
 <br>
 
-### [Load Image Random](#Load_Image_Random)
+### ==[Load Image Random](#Load_Image_Random)==
 
 <br>
 
@@ -17,7 +17,7 @@
 
 <br>
 
-### [Save <i>xxx</i> every "n" generations](#Save_every_n_generations)
+### ==[Save <i>xxx</i> every "n" generations](#Save_every_n_generations)==
 
 <br>
 
@@ -25,13 +25,13 @@
 
 <br>
 
-### [Random Any](#Random_Any)
+### ==[Random Any](#Random_Any)==
 
 - A node which can choose randomly something.
 
 <br>
 
-### [Prompt with variables](#Prompt_with_variables)
+### ==[Prompt with variables](#Prompt_with_variables)==
 
 - A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer), which give the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, have different prompt with the same variables).
 <br>&nbsp;<br>
@@ -131,5 +131,5 @@ This is useful if you want multiple variable for one choice.
 
 ![prompt_with_var_ex2](https://github.com/user-attachments/assets/a2e5891b-d6f5-4a31-b6de-6a14a2bcb2c5)
 
-The resulting object is always blue and shiny if it's round, and always green and mat if its's squared.
+The resulting object will be always blue and shiny if it's round, and always green and mat if its's squared.
 <br>
