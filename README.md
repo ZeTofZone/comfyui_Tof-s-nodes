@@ -42,6 +42,8 @@ All saving with the filename used by the WAS-nodes-suite "Image Save" node.
 <br>&nbsp;<br>
 
 <hr>
+These nodes was made while learning python, and with a lot of adaptations from different other custom nodes.<br>Thanks to them....
+<hr>
 <h1 id="grow_mask"><b>Grow Mask HV</b></h1>
 
 
