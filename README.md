@@ -108,7 +108,7 @@ A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicpromp
 </b>
 <ul><li>Example :</li></ul>
 
-![prompt_with_var_ex](https://github.com/user-attachments/assets/ca80e4d2-13bc-4399-9f7b-93d1a58ba1ea)
+![prompt_with_var_ex](https://github.com/user-attachments/assets/9fcbe9e5-49b2-499a-bf2f-e3e89734a1a9)
 
 
 <br>&nbsp;<br><b>Note2 : You can also use a semi-colon ";" to separate variables.</b>
@@ -130,7 +130,7 @@ This is useful if you want multiple variables for one choice.
 <br>&nbsp;<br>
 <ul><li>Example using semi-colon separators :</li></ul>
 
-![prompt_with_var_ex2](https://github.com/user-attachments/assets/f105092b-3bbb-46d1-a60a-9b212141955d)
+![prompt_with_var_ex2](https://github.com/user-attachments/assets/5acbbe24-b561-400a-9291-96bf599ad4de)
 
 
 The resulting object will be always blue and shiny if it's round, and always green and matte if it's squared.
@@ -146,7 +146,7 @@ But I don't recommend that
 
 - This is a very simple implementation, without any other options (no strength, no multiple choice, no recursive like "{{A|B}|C}", ...).
 
-Anyway this will work (not recommended) :
+Anyway this will work (but not recommended) :
 
+![prompt_with_var_ex4](https://github.com/user-attachments/assets/103f1ced-85b1-4c05-ab6d-91a4471ec6b7)
 
-![prompt_with_var_ex4](https://github.com/user-attachments/assets/6810f22f-2705-4398-98df-52e82bae6d0c)
