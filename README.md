@@ -21,19 +21,24 @@
 
 <br>
 
-- A set of 3 nodes made to work with the <a href="https://github.com/WASasquatch/was-node-suite-comfyui" target="_blank">WAS-nodes-suite</a> "Image Save" node.
+- A set of 3 nodes made to work with the <a href="https://github.com/WASasquatch/was-node-suite-comfyui" target="_blank">WAS-nodes-suite</a> "Image Save" node.<br>You can configure the running on every n generation.<br>&nbsp;<br>They are saving :
+  - The workflow in json format.
+  - The prompt (or any text) to a txt file.
+  - The image in png format with the workflow embeded on it.
+ 
+All saving with the filename used by the WAS-nodes-suite "Image Save" node.
 
 <br>
 
 ### ==[Random Any](#Random_Any)==
 
-- A node which can choose randomly something.
+- A node which can choose randomly something, with any number of inputs.
 
 <br>
 
 ### ==[Prompt with variables](#Prompt_with_variables)==
 
-- A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer, can also works alone), which gives the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, have different prompts with the same variables).
+- A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer, can also works alone), which gives the possibility to use the same variable multiple times.<br>You can use multiple of this node for, on the same workflow, have different prompts with the same variables.<br>You can also define multiple values for the same variable - see Note2.
 <br>&nbsp;<br>
 
 <hr>
