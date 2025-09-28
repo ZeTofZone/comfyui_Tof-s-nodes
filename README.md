@@ -147,7 +147,7 @@ The node has the capacity to interpret the "random" style like (this is why ther
 
 But I don't recommend that
 
-- This is a very basic implementation, without any other options (no strength, no multiple choice, no recursive like "{{A|B}|C}"n no wildcards file support, ...).
+- This is a very basic implementation, without any other options (no strength, no multiple choice, no recursive like "{{A|B}|C}", no wildcards file support, ...).
 
 Anyway this will work (but not recommended) :
 
