@@ -46,7 +46,7 @@ any = AnyType("*")
 #________________________________________________________________
 #________________________________________________________________
 
-def read_wildcards(text: str):
+def read_wildcards(text: str, seed: int):
     inner = text.count('{')
     outer = text.count('}')
     if inner != outer or inner == 0 or outer == 0: return text
@@ -66,10 +66,11 @@ class variables_prompt_v2:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "variables": ("STRING", {"multiline": False}, {"forceInput": True})
+                "variables": ("STRING", {"multiline": False}, {"forceInput": True}),
+                "text": ("STRING", {"multiline": True}),
+                "seed": ("INT", {"default": 0, "min": 0, "max": 0x7FFFFFFFFFFFFFFF}),
             },
             "optional": {
-                "text": ("STRING", {"multiline": True})
             }
         }
 
@@ -81,12 +82,13 @@ class variables_prompt_v2:
 
 
 
-    def get_prompt(self, variables: str, text: str) -> tuple[str]:
+    def get_prompt(self, variables: str, seed: int, text: str) -> tuple[str]:
         """
         Main entrypoint for this node.
         Using the sampling context, generate a new prompt.
         """
-        outtext = read_wildcards(text)
+        outtext = read_wildcards(text, seed)
+        variables = read_wildcards(variables, seed)
         variables = variables.replace(";", "\n")
         varall = variables.split("\n")
         count = 0
@@ -110,55 +112,6 @@ class variables_prompt_v2:
 
 
 
-#________________________________________________________________
-#________________________________________________________________
-# Prompt with variables
-# add , {"forceInput": True}
-#________________________________________________________________
-#________________________________________________________________
-
-
-class variables_prompt:
-    @classmethod
-    def __init__(self):
-        pass
-    @classmethod
-    def INPUT_TYPES(s):
-        return {
-            "required": {
-                "variables": ("STRING", {"multiline": True})
-            },
-            "optional": {
-                "text": ("STRING", {"multiline": True})
-            }
-        }
-
-
-    RETURN_TYPES = ("STRING", "STRING",)
-    RETURN_NAMES = ("out", "variables",)
-    FUNCTION = "get_prompt"
-    CATEGORY = "Tof"
-
-
-
-    def get_prompt(self, variables: str, text: str) -> tuple[str]:
-        """
-        Main entrypoint for this node.
-        Using the sampling context, generate a new prompt.
-        """
-        outtext = read_wildcards(text)
-        variables = variables.replace(";", "\r\n")
-        varall = variables.split("\r\n")
-        bc = len(varall)
-        for v in reversed(varall):
-            nb = "#"+str(bc)
-            #print("TOF : "+nb+" => " + v)
-            outtext = outtext.replace(nb, v)
-            bc = bc - 1
-            
-        #print("TOF : "+outtext)
-
-        return (outtext, variables,)
 
 
 
