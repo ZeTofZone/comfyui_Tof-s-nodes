@@ -1,7 +1,13 @@
 # comfyui Tof's nodes
 A set of utility nodes for Comfyui
+
+[Grow Mask HV](#grow_mask)<br>
+[Laod Image Random](#Laod_Image_Random)<br>
+[Save <i>xxx</i> every "n" generations](#Save_every_n_generations)<br>
+[Random Any](#Random_Any)
+[Prompt with variables](#Prompt_with_variables)
 <hr>
-<h1><b>Grow Mask HV</b></h1>
+<h1 id="grow_mask"><b>Grow Mask HV</b></h1>
 
 
 This node is made to grow a mask with different value for the horizontal and vertical size.
@@ -9,7 +15,7 @@ This node is made to grow a mask with different value for the horizontal and ver
 ![grow_mask_hv](https://github.com/user-attachments/assets/4d8e36f7-cd81-4fda-84c3-649b988187a5)
 
 <hr>
-<h1><b>Laod Image Random</b></h1>
+<h1 id="Laod_Image_Random"><b>Laod Image Random</b></h1>
 A node to load a random image from a folder.
 <br>&nbsp;<br>
 
@@ -20,7 +26,7 @@ If the image contain alpha layer, it will output it as a mask.
 
 
 <hr>
-<h1><b>Save <i>xxx</i> every "n" generations</b></h1>
+<h1 id="Save_every_n_generations"><b>Save <i>xxx</i> every "n" generations</b></h1>
 A set of 3 nodes made to work with the <a href="https://github.com/WASasquatch/was-node-suite-comfyui" target="_blank">WAS-nodes-suite</a> "Image Save" node.
 <br>&nbsp;<br>
 They are saving :
@@ -34,7 +40,7 @@ They are saving :
 ![save_xxx_n_generations](https://github.com/user-attachments/assets/03ba9b36-d04a-43b0-9f53-5bc8efcc9932)
 
 <hr>
-<h1><b>Random Any</b></h1>
+<h1 id="Random_Any"><b>Random Any</b></h1>
 A node which can choose randomly something.
 <br>&nbsp;<br>
 
@@ -53,30 +59,47 @@ When you put something on input, it will add a new empty input automatically :
 </ul>
 
 <hr>
-<h1><b>Prompt with variables</b></h1>
+<h1 id="Prompt_with_variables"><b>Prompt with variables</b></h1>
 A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer), which give the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, have different prompt with the same variables).
 <br>&nbsp;<br>
 
 ![prompt_with_var_1](https://github.com/user-attachments/assets/a98e811b-4175-4121-8ce4-d90aaad4ad6a)
 <br>&nbsp;<br>
-<b>Note : the variables format should begin with the variable number, a space, ":", and another space : "1 : " and the value after.
-The variable is called by #<i>variable_number</i> : "#1".</b>
+<b>Note1 : the variables format should begin with the variable number, a space, ":", and another space : 
+
+>1 :
+
+and the value after.
+<br>The variable is called by #<i>variable_number</i> : 
+
+>#1
+
+</b>
 <ul><li>Exemple :</li></ul>
 
 ![prompt_with_var_ex](https://github.com/user-attachments/assets/605d308f-ecf8-438d-871d-d8a243229d6c)
 
-<br>&nbsp;<br><b>Note2 : You can also use a semi-colon ";" to separate variables.
-<br>exemple : "{a cat|a dog};{brown|black}" is the same as <br>1 : {a cat|a dog}<br>2 : {brown|black}<br>
+<br>&nbsp;<br><b>Note2 : You can also use a semi-colon ";" to separate variables.</b>
+<br>exemple : 
+
+> {a cat|a dog};{brown|black}
+
+is the same as :
+
+> 1 : {a cat|a dog}<br>
+> 2 : {brown|black}<br>
+
 This is useful if you want multiple variable for one choice.
-<br>&nbsp;<br>exemple : <br>&nbsp;<br></b>
-<table><tr><td>variable</td><td>prompt</td><td>result</td></td></td></tr>
+<br>&nbsp;<br>exemple : <br>&nbsp;<br>
+<table><tr><td>variables</td><td>prompt</td><td>possible results</td></td></td></tr>
 <tr><td>1 : {smiling;a happy|crying;an unhappy}</td><td>A man #1 with #2 face.</td><td>A man smiling with a happy face.<br>or<br>A man crying with an unhappy face.</td></tr>
 </table>
 <br>In this case don't forget to jump to the next available variable (3 in this case) as variables #1 and #2 are already used.
-<br>
-
+<br>&nbsp;<br>
 <ul><li>Exemple using semi-colon separators :</li></ul>
 
 
 ![prompt_with_var_ex2](https://github.com/user-attachments/assets/a2e5891b-d6f5-4a31-b6de-6a14a2bcb2c5)
 
+The resulting object is always blue and shiny if it's round, and always green and mat if its's squared.
+<br>
