@@ -1,21 +1,51 @@
 # comfyui Tof's nodes
-A set of utility nodes for Comfyui
+## A set of utility nodes for Comfyui
 
-[Grow Mask HV](#grow_mask)<br>
-[Laod Image Random](#Laod_Image_Random)<br>
-[Save <i>xxx</i> every "n" generations](#Save_every_n_generations)<br>
-[Random Any](#Random_Any)
-[Prompt with variables](#Prompt_with_variables)
+### [Grow Mask HV](#grow_mask)
+
+<br>
+
+- Grow a mask with different values for the horizontal and vertical sizes.
+
+<br>
+
+### [Load Image Random](#Load_Image_Random)
+
+<br>
+
+- A node to load a random image from a folder.
+
+<br>
+
+### [Save <i>xxx</i> every "n" generations](#Save_every_n_generations)
+
+<br>
+
+- A set of 3 nodes made to work with the <a href="https://github.com/WASasquatch/was-node-suite-comfyui" target="_blank">WAS-nodes-suite</a> "Image Save" node.
+
+<br>
+
+### [Random Any](#Random_Any)
+
+- A node which can choose randomly something.
+
+<br>
+
+### [Prompt with variables](#Prompt_with_variables)
+
+- A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer), which give the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, have different prompt with the same variables).
+<br>&nbsp;<br>
+
 <hr>
 <h1 id="grow_mask"><b>Grow Mask HV</b></h1>
 
 
-This node is made to grow a mask with different value for the horizontal and vertical size.
+This node is made to grow a mask with different values for the horizontal and vertical sizes.
 <br>&nbsp;<br>
 ![grow_mask_hv](https://github.com/user-attachments/assets/4d8e36f7-cd81-4fda-84c3-649b988187a5)
 
 <hr>
-<h1 id="Laod_Image_Random"><b>Laod Image Random</b></h1>
+<h1 id="Load_Image_Random"><b>Load Image Random</b></h1>
 A node to load a random image from a folder.
 <br>&nbsp;<br>
 
