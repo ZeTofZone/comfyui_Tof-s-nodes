@@ -90,7 +90,7 @@ When you put something on input, it will add a new empty input automatically :
 <ul>
   <li>The <i>index</i> output is the chosen element index (INT, start at 0 for "any_1").</li>
   <li>The <i>seed</i> output acts as a relay to chain multiple nodes taking the same index (if the seed is the same, the chosen input will be the same. As such, you can switch multiple elements; it will always choose the same input between the connected nodes).</li>
-  <li>The <i>seed_INT+n</i> output is to chain some other random node. Adding an INT (n) to the seed will make it follow the seed of this node (useful for reproducing workflows, and to be able to fix the seed of the entire workflow with only one change).</li>
+  <li>The <i>seed_INT+n</i> output is to chain some other random node. Adding an INT (n) to the seed will make it follow the seed of this node (useful for reproducing workflows, and to be able to fixe the seed of the entire workflow with only one change).</li>
 </ul>
 
 <hr>
