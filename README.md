@@ -132,5 +132,5 @@ This is useful if you want multiple variable for one choice.
 ![prompt_with_var_ex2](https://github.com/user-attachments/assets/a2e5891b-d6f5-4a31-b6de-6a14a2bcb2c5)
 
 The resulting object will be always blue and shiny if it's round, and always green and mat if its's squared.
-<br>
+<br>&nbsp;<br>
 This is very helpful with long and complicated prompt or workflows using different checkpoints, each of them needing different prompts.
