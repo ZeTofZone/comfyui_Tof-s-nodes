@@ -93,21 +93,23 @@ When you put something on input, it will add a new empty input automatically :
 A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer), which gives the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, having different prompts with the same variables).
 <br>&nbsp;<br>
 
-![prompt_with_var_1](https://github.com/user-attachments/assets/a98e811b-4175-4121-8ce4-d90aaad4ad6a)
+![prompt_with_var_1](https://github.com/user-attachments/assets/79dc1d88-05f9-4aa5-a685-450a755861ff)
+
 <br>&nbsp;<br>
 <b>Note1 : the variable format should begin with the variable number, a space, ":", and another space : 
 
 >1 :
 
-and the value after.
-<br>The variable is called by #<i>variable_number</i> : 
+<br>and the value after.
+<br>&nbsp;<br>The variable is called by #<i>variable_number</i> : 
 
 >#1
 
 </b>
 <ul><li>Example :</li></ul>
 
-![prompt_with_var_ex](https://github.com/user-attachments/assets/605d308f-ecf8-438d-871d-d8a243229d6c)
+![prompt_with_var_ex](https://github.com/user-attachments/assets/ca80e4d2-13bc-4399-9f7b-93d1a58ba1ea)
+
 
 <br>&nbsp;<br><b>Note2 : You can also use a semi-colon ";" to separate variables.</b>
 <br>Example : 
@@ -128,21 +130,21 @@ This is useful if you want multiple variables for one choice.
 <br>&nbsp;<br>
 <ul><li>Example using semi-colon separators :</li></ul>
 
+![prompt_with_var_ex2](https://github.com/user-attachments/assets/f105092b-3bbb-46d1-a60a-9b212141955d)
 
-![prompt_with_var_ex2](https://github.com/user-attachments/assets/a2e5891b-d6f5-4a31-b6de-6a14a2bcb2c5)
 
 The resulting object will be always blue and shiny if it's round, and always green and matte if it's squared.
 <br>&nbsp;<br>
 This is very helpful with long and complicated prompts or workflows using different checkpoints, each of them needing different prompts.
 <br>&nbsp;<br>
 <b>Note3 : </b>
-The node has the capacity to interpret the "random" style like 
+The node has the capacity to interpret the "random" style like (this is why there is a "seed" input).
 
 >{A|B}
 
 But I don't recommend that
 
-- This is a very simple implementation, without any other options (no strength, no multiple choice, ...).
+- This is a very simple implementation, without any other options (no strength, no multiple choice, no recursive like "{{A|B}|C}", ...).
 
 Anyway this will work (not recommended) :
 
