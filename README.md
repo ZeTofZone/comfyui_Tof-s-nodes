@@ -97,6 +97,8 @@ When you put something on input, it will add a new empty input automatically :
 <h1 id="Prompt_with_variables"><b>Prompt with variables</b></h1>
 A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer, can also works alone - see Note3), which gives the possibility to use the same variable multiple times.<br>You can use multiple of this node for, on the same workflow, have different prompts with the same variables.<br>You can also define multiple values for the same variable - see Note2..
 <br>&nbsp;<br>
+The seed input will be only used in standalone mode - see Note3.
+<br>&nbsp;<br>
 
 ![prompt_with_var_1](https://github.com/user-attachments/assets/79dc1d88-05f9-4aa5-a685-450a755861ff)
 
