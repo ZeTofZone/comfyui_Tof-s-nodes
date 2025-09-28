@@ -143,7 +143,7 @@ This is useful if you want multiple variables for one choice, crossing both meth
 
 The resulting object will be always blue and shiny if it's round, and always green and matte if it's squared.
 <br>&nbsp;<br>
-This is very helpful with long and complicated prompts or workflows using different checkpoints, each of them needing different prompts.
+This is very helpful with long and complicated prompts, or workflows using different checkpoints, each of them needing different prompts.
 <br>&nbsp;<br>
 <b>Note3 : </b>
 The node has the capacity to interpret the "random" style like (this is why there is a "seed" input).
