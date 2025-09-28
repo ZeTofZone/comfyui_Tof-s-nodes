@@ -1,5 +1,7 @@
 # comfyui Tof's nodes
 ## A set of utility nodes for Comfyui
+These nodes were developed during my Python learning process and incorporate significant adaptations from various other custom nodes.<br>My gratitude to the original developers, and I apologize for any errors or misunderstandings.
+<hr>
 
 ### ==[Grow Mask HV](#grow_mask)==
 
@@ -41,8 +43,6 @@ All saving with the filename used by the WAS-nodes-suite "Image Save" node.
 - A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer, can also works alone), which gives the possibility to use the same variable multiple times.<br>You can use multiple of this node for, on the same workflow, have different prompts with the same variables.<br>You can also define multiple values for the same variable - see Note2.
 <br>&nbsp;<br>
 
-<hr>
-These nodes was made while learning python, and with a lot of adaptations from different other custom nodes.<br>Thanks to them....
 <hr>
 <h1 id="grow_mask"><b>Grow Mask HV</b></h1>
 
