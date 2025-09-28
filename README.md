@@ -61,8 +61,8 @@ A set of 3 nodes made to work with the <a href="https://github.com/WASasquatch/w
 <br>&nbsp;<br>
 They are saving :
 <ul>
-  <li>The workflow in json format for the node "Save json every N generations" (useful if you use the WAS node to save in jpg, which doesn't save the embedded workflow). The file is saved in a "workflow" folder.</li>
-  <li>The text (present at "text" input) for the node "Save text every N generations" (useful to save the prompt). The file is saved in a "prompt" folder.</li>
+  <li>The workflow in json format for the node "Save json every N generations" (useful if you use the WAS node to save in jpg, which doesn't save the embedded workflow). The file is saved in a "workflow" subfolder with the name of the image.</li>
+  <li>The text (present at "text" input) for the node "Save text every N generations" (useful to save the prompt). The file is saved in a "prompt" subfolder with the name of the image.</li>
   <li>The image in png format with embedded workflow for the node "Save image every N generations".</li>
 </ul>
 <br>&nbsp;<br>
@@ -130,7 +130,7 @@ This is useful if you want multiple variables for one choice.
 <br>&nbsp;<br>
 <ul><li>Example using semi-colon separators :</li></ul>
 
-![prompt_with_var_ex2](https://github.com/user-attachments/assets/5acbbe24-b561-400a-9291-96bf599ad4de)
+![prompt_with_var_ex2](https://github.com/user-attachments/assets/1babbafa-0325-417a-9809-055104638e98)
 
 
 The resulting object will be always blue and shiny if it's round, and always green and matte if it's squared.
