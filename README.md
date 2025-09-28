@@ -85,7 +85,7 @@ When you put something on input, it will add a new empty input automatically :
 <ul>
   <li>The <i>index</i> output is the chosen index element (INT, start at 0 for "any_1").</li>
   <li>The <i>seed</i> output acts as a relay to chain multiple nodes taking the same index (if the seed is the same, the chosen input will be the same. As such, you can switch multiple elements; it will always choose the same input between the connected nodes).</li>
-  <li>The <i>seed_INT+n</i> output is to chain some other random node. Adding an INT (n) to the seed will make it follow the seed of this node (useful for reproducing workflows).</li>
+  <li>The <i>seed_INT+n</i> output is to chain some other random node. Adding an INT (n) to the seed will make it follow the seed of this node (useful for reproducing workflows, and to be able to fix the seed of the entire workflow with only one change).</li>
 </ul>
 
 <hr>
@@ -100,7 +100,10 @@ A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicpromp
 
 >1 :
 
-<br>and the value after.
+<br>with the value after.
+
+>1 : value
+
 <br>&nbsp;<br>The variable is called by #<i>variable_number</i> : 
 
 >#1
@@ -144,7 +147,7 @@ The node has the capacity to interpret the "random" style like (this is why ther
 
 But I don't recommend that
 
-- This is a very basic implementation, without any other options (no strength, no multiple choice, no recursive like "{{A|B}|C}", ...).
+- This is a very basic implementation, without any other options (no strength, no multiple choice, no recursive like "{{A|B}|C}"n no wildcards file support, ...).
 
 Anyway this will work (but not recommended) :
 
