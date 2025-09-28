@@ -33,7 +33,7 @@
 
 ### ==[Prompt with variables](#Prompt_with_variables)==
 
-- A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer), which gives the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, have different prompts with the same variables).
+- A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer, can also works alone), which gives the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, have different prompts with the same variables).
 <br>&nbsp;<br>
 
 <hr>
