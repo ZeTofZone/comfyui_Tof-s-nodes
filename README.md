@@ -45,7 +45,7 @@ All saving with the filename used by the WAS-nodes-suite "Image Save" node.
 <h1 id="grow_mask"><b>Grow Mask HV</b></h1>
 
 
-This node is made to grow a mask with different values for the horizontal and vertical sizes.
+This node grow a mask with different values for the horizontal and vertical sizes.
 <br>&nbsp;<br>
 ![grow_mask_hv](https://github.com/user-attachments/assets/4d8e36f7-cd81-4fda-84c3-649b988187a5)
 
