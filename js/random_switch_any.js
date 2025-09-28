@@ -1,3 +1,4 @@
+# this file is adapted from the file "mask_composite_ppm.js" from https://github.com/pamparamm/ComfyUI-ppm
 import { app } from "/scripts/app.js";
 
 app.registerExtension({
