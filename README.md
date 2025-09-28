@@ -101,7 +101,7 @@ A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicpromp
 ![prompt_with_var_1](https://github.com/user-attachments/assets/79dc1d88-05f9-4aa5-a685-450a755861ff)
 
 <br>&nbsp;<br>
-<b>Note1 : the variable format should begin with the variable number, a space, ":", and another space : 
+<b>Note1 :</b> the variable format should begin with the variable number, a space, ":", and another space : 
 
 >1 :
 
@@ -113,13 +113,13 @@ A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicpromp
 
 >#1
 
-</b>
+
 <ul><li>Example :</li></ul>
 
 ![prompt_with_var_ex](https://github.com/user-attachments/assets/9fcbe9e5-49b2-499a-bf2f-e3e89734a1a9)
 
 
-<br>&nbsp;<br><b>Note2 : You can also use a semi-colon ";" to separate variables.</b>
+<br>&nbsp;<br><b>Note2 :</b> You can also use a semi-colon ";" to separate variables.
 <br>Example : 
 
 > {a cat|a dog};{brown|black}
