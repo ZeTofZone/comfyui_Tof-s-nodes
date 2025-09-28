@@ -33,7 +33,7 @@
 
 ### ==[Prompt with variables](#Prompt_with_variables)==
 
-- A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer), which give the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, have different prompts with the same variables).
+- A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer), which gives the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, have different prompts with the same variables).
 <br>&nbsp;<br>
 
 <hr>
@@ -49,7 +49,7 @@ This node is made to grow a mask with different values for the horizontal and ve
 A node to load a random image from a folder.
 <br>&nbsp;<br>
 
-If the image contain alpha layer, it will output it as a mask.
+If the image contains an alpha layer, it will output it as a mask.
 <br>&nbsp;<br>
 
 ![laod_image_random](https://github.com/user-attachments/assets/e69002b4-45ea-4427-9ee1-e9734a77e2ed)
@@ -61,9 +61,9 @@ A set of 3 nodes made to work with the <a href="https://github.com/WASasquatch/w
 <br>&nbsp;<br>
 They are saving :
 <ul>
-  <li>The workflow in json format for the node "Save json every N generations" (useful if you use the WAS node to save in jpg, which doesn't save the embeded workflow). The file is saved in a "workflow" folder.</li>
+  <li>The workflow in json format for the node "Save json every N generations" (useful if you use the WAS node to save in jpg, which doesn't save the embedded workflow). The file is saved in a "workflow" folder.</li>
   <li>The text (present at "text" input) for the node "Save text every N generations" (useful to save the prompt). The file is saved in a "prompt" folder.</li>
-  <li>The image in png format with embeded workflow for the node "Save image every N generations".</li>
+  <li>The image in png format with embedded workflow for the node "Save image every N generations".</li>
 </ul>
 <br>&nbsp;<br>
 
@@ -78,24 +78,24 @@ A node which can choose randomly something.
 
 <br>&nbsp;<br>
 When you put something on input, it will add a new empty input automatically :
-<br>(Take care to not mix different input types)
+<br>(Take care not to mix different input types)
 <br>&nbsp;<br>
 ![random_any2](https://github.com/user-attachments/assets/1dfaced8-b0b0-4810-9122-519d69a40566)
 <br>&nbsp;<br>
 <ul>
-  <li>The <i>index</i> output is the choosen index element (INT, start at 0 for "any_1").</li>
-  <li>The <i>seed</i> output act as a relay to chain multiple nodes taking the same index (if the seed is the same, the choosen input will be the same. As this, you can switch multiple elements, it will always choose the same input between the connected nodes).</li>
-  <li>The <i>seed_INT+n</i> output is to chain some other random node. Adding an INT (n) to the seed, will make it following the seed of this node (useful for reproducing workflows).</li>
+  <li>The <i>index</i> output is the chosen index element (INT, start at 0 for "any_1").</li>
+  <li>The <i>seed</i> output acts as a relay to chain multiple nodes taking the same index (if the seed is the same, the chosen input will be the same. As such, you can switch multiple elements; it will always choose the same input between the connected nodes).</li>
+  <li>The <i>seed_INT+n</i> output is to chain some other random node. Adding an INT (n) to the seed will make it follow the seed of this node (useful for reproducing workflows).</li>
 </ul>
 
 <hr>
 <h1 id="Prompt_with_variables"><b>Prompt with variables</b></h1>
-A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer), which give the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, having different prompts with the same variables).
+A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer), which gives the possibility to use the same variable multiple times (note that you can use multiple of this node for, on the same workflow, having different prompts with the same variables).
 <br>&nbsp;<br>
 
 ![prompt_with_var_1](https://github.com/user-attachments/assets/a98e811b-4175-4121-8ce4-d90aaad4ad6a)
 <br>&nbsp;<br>
-<b>Note1 : the variables format should begin with the variable number, a space, ":", and another space : 
+<b>Note1 : the variable format should begin with the variable number, a space, ":", and another space : 
 
 >1 :
 
@@ -105,12 +105,12 @@ and the value after.
 >#1
 
 </b>
-<ul><li>Exemple :</li></ul>
+<ul><li>Example :</li></ul>
 
 ![prompt_with_var_ex](https://github.com/user-attachments/assets/605d308f-ecf8-438d-871d-d8a243229d6c)
 
 <br>&nbsp;<br><b>Note2 : You can also use a semi-colon ";" to separate variables.</b>
-<br>exemple : 
+<br>Example : 
 
 > {a cat|a dog};{brown|black}
 
@@ -119,18 +119,32 @@ is the same as :
 > 1 : {a cat|a dog}<br>
 > 2 : {brown|black}<br>
 
-This is useful if you want multiple variable for one choice.
-<br>&nbsp;<br>exemple : <br>&nbsp;<br>
+This is useful if you want multiple variables for one choice.
+<br>&nbsp;<br>Example : <br>&nbsp;<br>
 <table><tr><td>variables</td><td>prompt</td><td>possible results</td></td></td></tr>
 <tr><td>1 : {smiling;a happy|crying;an unhappy}</td><td>A man #1 with #2 face.</td><td>A man smiling with a happy face.<br>or<br>A man crying with an unhappy face.</td></tr>
 </table>
 <br>In this case don't forget to jump to the next available variable (3 in this case) as variables #1 and #2 are already used.
 <br>&nbsp;<br>
-<ul><li>Exemple using semi-colon separators :</li></ul>
+<ul><li>Example using semi-colon separators :</li></ul>
 
 
 ![prompt_with_var_ex2](https://github.com/user-attachments/assets/a2e5891b-d6f5-4a31-b6de-6a14a2bcb2c5)
 
-The resulting object will be always blue and shiny if it's round, and always green and mat if its's squared.
+The resulting object will be always blue and shiny if it's round, and always green and matte if it's squared.
 <br>&nbsp;<br>
-This is very helpful with long and complicated prompt or workflows using different checkpoints, each of them needing different prompts.
+This is very helpful with long and complicated prompts or workflows using different checkpoints, each of them needing different prompts.
+<br>&nbsp;<br>
+<b>Note3 : </b>
+The node has the capacity to interpret the "random" style like 
+
+>{A|B}
+
+But I don't recommend that
+
+- This is a very simple implementation, without any other options (no strength, no multiple choice, ...).
+
+Anyway this will work (not recommended) :
+
+
+![prompt_with_var_ex4](https://github.com/user-attachments/assets/6810f22f-2705-4398-98df-52e82bae6d0c)
