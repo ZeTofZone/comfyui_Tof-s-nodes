@@ -40,7 +40,10 @@ All saving with the filename used by the WAS-nodes-suite "Image Save" node.
 
 ### ==[Prompt with variables](#Prompt_with_variables)==
 
-- A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer, can also works alone), which gives the possibility to use the same variable multiple times.<br>You can use multiple of this node for, on the same workflow, have different prompts with the same variables.<br>You can also define multiple values for the same variable - see Note2.
+- A node made to run with <a href="https://github.com/adieyal/comfyui-dynamicprompts">dynamic prompt</a> (or any other prompt randomizer, can also works alone), which gives the possibility to use the same variable multiple times.
+
+<br>You can use multiple of this node for, on the same workflow, have different prompts with the same variables.
+<br>You can also define multiple values for the same variable (linked variables) - see Note2.
 <br>&nbsp;<br>
 
 <hr>
@@ -133,7 +136,7 @@ is the same as :
 > 1 : {a cat|a dog}<br>
 > 2 : {brown|black}<br>
 
-This is useful if you want multiple variables for one choice, crossing both methods together.
+This is useful if you want multiple variables for one choice (linked variables), crossing both methods together.
 <br>&nbsp;<br>Example : <br>&nbsp;<br>
 <table><tr><td>variables</td><td>prompt</td><td>possible results</td></td></td></tr>
 <tr><td>1 : {smiling;a happy|crying;an unhappy}</td><td>A man #1 with #2 face.</td><td>A man smiling with a happy face.<br>or<br>A man crying with an unhappy face.</td></tr>
@@ -147,7 +150,7 @@ This is useful if you want multiple variables for one choice, crossing both meth
 
 The resulting object will be always blue and shiny if it's round, and always green and matte if it's squared.
 <br>&nbsp;<br>
-This is very helpful with long and complicated prompts, or workflows using different checkpoints, each of them needing different prompts.
+This is very helpful with long and complicated prompts; or workflows using different checkpoints, each of them needing different prompts.
 <br>&nbsp;<br>
 <b>Note3 : </b>
 The node has the capacity to interpret the "random" style like (this is why there is a "seed" input).
