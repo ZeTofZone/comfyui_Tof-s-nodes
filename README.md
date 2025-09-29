@@ -108,7 +108,8 @@ The seed input will be only used in standalone mode - see Note3.
 ![prompt_with_var_1](https://github.com/user-attachments/assets/79dc1d88-05f9-4aa5-a685-450a755861ff)
 
 <br>&nbsp;<br>
-<b>Note1 :</b> the variable format should begin with the variable number, a space, ":", and another space : 
+### <b>Note1 :</b>
+<br>the variable format should begin with the variable number, a space, ":", and another space : 
 
 >1 :
 
@@ -126,7 +127,9 @@ The seed input will be only used in standalone mode - see Note3.
 ![prompt_with_var_ex](https://github.com/user-attachments/assets/9fcbe9e5-49b2-499a-bf2f-e3e89734a1a9)
 
 
-<br>&nbsp;<br><b>Note2 :</b> You can also use a semi-colon ";" to separate variables.
+<br>&nbsp;<br>
+### <b>Note2 :</b>
+<br>You can also use a semi-colon ";" to separate variables.
 <br>Example : 
 
 > {a cat|a dog};{brown|black}
@@ -152,8 +155,8 @@ The resulting object will be always blue and shiny if it's round, and always gre
 <br>&nbsp;<br>
 This is very helpful with long and complicated prompts; or workflows using different checkpoints, each of them needing different prompts.
 <br>&nbsp;<br>
-<b>Note3 : </b>
-The node has the capacity to interpret the "random" style like (this is why there is a "seed" input).
+### <b>Note3 : </b>
+<br>The node has the capacity to interpret the "random" style like (this is why there is a "seed" input) :
 
 >{A|B}
 
