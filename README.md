@@ -26,7 +26,7 @@ These nodes were developed during my Python learning process and incorporate sig
 - A set of 3 nodes made to work with the <a href="https://github.com/WASasquatch/was-node-suite-comfyui" target="_blank">WAS-nodes-suite</a> "Image Save" node.<br>You can configure the running on every n generation.<br>&nbsp;<br>They are saving :
   - The workflow in json format.
   - The prompt (or any text) to a txt file.
-  - The image in png format with the workflow embeded on it.
+  - The image in png format with the workflow embedded on it.
  
 All saving with the filename used by the WAS-nodes-suite "Image Save" node.
 
