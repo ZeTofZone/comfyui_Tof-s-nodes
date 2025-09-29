@@ -109,11 +109,7 @@ The seed input will be only used in standalone mode - see Note3.
 
 <br>&nbsp;<br>
 ### <b>Note1 :</b>
-<br>the variable format should begin with the variable number, a space, ":", and another space : 
-
->1 :
-
-<br>with the value after.
+<br>the variable format should begin with the variable number, a space, ":", and another space with the value after : 
 
 >1 : value
 
